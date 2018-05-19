@@ -1,6 +1,5 @@
 package com.Chinazhouwy.sorting_algorithm.utils;
 
-import java.text.MessageFormat;
 import java.util.Arrays;
 
 public class DataUtil {
@@ -39,6 +38,18 @@ public class DataUtil {
         System.out.print("sorted array: ");
         Arrays.stream(array).forEach(e -> System.out.print(e+" "));
         System.out.println();
+    }
+
+    /**
+     *
+     * @param array
+     * @param i
+     * @param j
+     */
+    public static void swap(int[] array,int i, int j) {
+        array[i] = array[i]^array[j];
+        array[j] = array[i]^array[j];
+        array[i] = array[i]^array[j];
     }
 
 }
