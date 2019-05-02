@@ -1,3 +1,4 @@
+package com.Chinazhouwy.leetcode;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
@@ -46,7 +47,7 @@ import java.util.PriorityQueue;
  * 假设k是合法的，即：k 始终小于输入的非空数组的元素个数.
  * 
  */
-class Solution {
+class Solution2 {
     final PriorityQueue<Integer> maxQueue = new PriorityQueue<>(10,new Comparator<Integer>() {
         @Override
         public int compare(Integer o1, Integer o2) {
@@ -57,22 +58,22 @@ class Solution {
     final PriorityQueue<Integer> minQueue = new PriorityQueue<>();
 
 
-    public Solution() {
+    public Solution2() {
         
     }
     
     public void addNum(int num) {
-        if(maxQueue.size() != 0 && num <= maxQueue.peek()){
-            maxQueue.offer(Integer.valueOf(num));
-            if(maxQueue.size()-minQueue.size() > 1){
-                Integer val = maxQueue.poll();
-                minQueue.offer(val);
-            }
-        }else{
-            minQueue.offer(Integer.valueOf(num)d[]
-                maxQueue.offer(val);
-            }
-        }
+//        if(maxQueue.size() != 0 && num <= maxQueue.peek()){
+//            maxQueue.offer(Integer.valueOf(num));
+//            if(maxQueue.size()-minQueue.size() > 1){
+//                Integer val = maxQueue.poll();
+//                minQueue.offer(val);
+//            }
+//        }else{
+//            minQueue.offer(Integer.valueOf(num)d[]
+//                maxQueue.offer(val);
+//            }
+//        }
     }
 
     public void reduceNum(int num) {
@@ -101,10 +102,10 @@ class Solution {
         }
     }
         
-    public double[] medianSlidingWindow(int[] nums, int k) {
-        for( int num : nums ){
-            
-        }
-    }
+//    public double[] medianSlidingWindow(int[] nums, int k) {
+//        for( int num : nums ){
+//            
+//        }
+//    }
 }
 

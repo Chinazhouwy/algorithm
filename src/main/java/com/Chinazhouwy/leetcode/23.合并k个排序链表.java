@@ -1,3 +1,4 @@
+package com.Chinazhouwy.leetcode;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
@@ -37,28 +38,28 @@ import java.util.PriorityQueue;
  * }
  */
 class Solution {
-    public ListNode mergeKLists(ListNode[] lists) {
-        PriorityQueue<ListNode> queue = new PriorityQueue<>(lists.length,
-        new Comparator<ListNode>() {
-			@Override
-			public int compare(ListNode o1, ListNode o2) {
-				return o1.val - o2.val;
-			}
-        });  
-        for(ListNode node : lists){
-            queue.offer(node);
-        } 
-        ListNode dummy = new ListNode(-1);
-        ListNode cur = dummy;
-        while(!queue.isEmpty()){
-            ListNode temp = queue.poll();
-            if(temp != null){
-                cur.next = temp;
-                queue.offer(temp);
-            }
-            cur = cur.next;
-        }
-        return dummy.next;
-    }
+//    public ListNode mergeKLists(ListNode[] lists) {
+//        PriorityQueue<ListNode> queue = new PriorityQueue<>(lists.length,
+//        new Comparator<ListNode>() {
+//			@Override
+//			public int compare(ListNode o1, ListNode o2) {
+//				return o1.val - o2.val;
+//			}
+//        });  
+//        for(ListNode node : lists){
+//            queue.offer(node);
+//        } 
+//        ListNode dummy = new ListNode(-1);
+//        ListNode cur = dummy;
+//        while(!queue.isEmpty()){
+//            ListNode temp = queue.poll();
+//            if(temp != null){
+//                cur.next = temp;
+//                queue.offer(temp);
+//            }
+//            cur = cur.next;
+//        }
+//        return dummy.next;
+//    }
 }
 
