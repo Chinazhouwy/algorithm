@@ -3,6 +3,7 @@ package com.Chinazhouwy.data_structures.linkListArr;
 import com.Chinazhouwy.data_structures.Stack;
 import com.Chinazhouwy.data_structures.linkListArr.LinkedList;
 
+// 链表实现栈
 public class LinkedListStack<E> implements Stack<E> {
 	
 	private LinkedList<E> list;
