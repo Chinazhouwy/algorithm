@@ -284,6 +284,8 @@ public class BST<E extends Comparable<E>> {
 	//需找某一个点的前驱和后继
 	
 	// rank select
+	
+	// 支持重复元素
 
 	public static void main(String[] args) {
 		BST<Integer> bst = new BST<Integer>();
