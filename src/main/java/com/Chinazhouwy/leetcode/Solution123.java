@@ -3,11 +3,12 @@ package com.Chinazhouwy.leetcode;
 public class Solution123 {
 
     public int maxProfit(int[] prices) {
-        int[][] dp = new int[prices.length+1][5];
+        int[][] dp = new int[prices.length][5];
         dp[0][0] = 0;
         dp[0][1] = -prices[0];
-//        dp[0][2] = 0; //第二次买入，，持有
-//        dp[0][3] = 0; //第二次卖出，，不持有
+        dp[0][2] = 0; //第二次买入，，持有
+        dp[0][3] = -prices[0]; //第二次卖出，，不持有
+        dp[0][4] = 0;
         for(int i = 1;i< prices.length;i++){
             dp[i][0] = dp[i-1][0];
             dp[i][1] = Math.max(dp[i-1][0] -prices[i],dp[i-1][1]);
@@ -23,7 +24,7 @@ public class Solution123 {
             }
         }
 
-        return max;
+        return  max;
     }
 
     public static void main(String[] args) {
