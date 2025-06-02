@@ -1,4 +1,4 @@
-package com.Chinazhouwy.data_structures.tree;
+package com.chinazhouwy.data_structures.tree;
 
 import java.util.LinkedList;
 import java.util.Queue;

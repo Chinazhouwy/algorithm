@@ -1,4 +1,4 @@
-package com.Chinazhouwy;
+package com.chinazhouwy;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.Chinazhouwy.data_structures.setstruct;
+package com.chinazhouwy.data_structures.setstruct;
 
 public interface Set<E> {
 	void add(E e);

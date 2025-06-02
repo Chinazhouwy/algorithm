@@ -1,4 +1,4 @@
-package com.Chinazhouwy.sorting_algorithm;
+package com.chinazhouwy.sorting_algorithm;
 
 import com.Chinazhouwy.Algorithm;
 

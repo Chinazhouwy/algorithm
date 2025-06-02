@@ -1,4 +1,4 @@
-package com.Chinazhouwy.data_structures.linkListArr;
+package com.chinazhouwy.data_structures.linkListArr;
 
 import com.Chinazhouwy.data_structures.Queue;
 

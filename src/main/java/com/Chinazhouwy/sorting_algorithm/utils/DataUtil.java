@@ -1,4 +1,4 @@
-package com.Chinazhouwy.sorting_algorithm.utils;
+package com.chinazhouwy.sorting_algorithm.utils;
 
 import java.util.Arrays;
 

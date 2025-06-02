@@ -1,4 +1,4 @@
-package com.Chinazhouwy;
+package com.chinazhouwy;
 
 import java.io.IOException;
 import java.nio.charset.Charset;

@@ -1,4 +1,4 @@
-package com.Chinazhouwy;
+package com.chinazhouwy;
 
 public abstract class Algorithm {
 

@@ -1,4 +1,4 @@
-package com.Chinazhouwy.data_structures;
+package com.chinazhouwy.data_structures;
 
 public interface Queue<E> {
 	

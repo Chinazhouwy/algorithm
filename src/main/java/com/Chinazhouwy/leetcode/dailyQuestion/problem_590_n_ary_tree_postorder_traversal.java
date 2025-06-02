@@ -1,4 +1,4 @@
-package com.Chinazhouwy.leetcode.dailyQuestion;
+package com.chinazhouwy.leetcode.dailyQuestion;
 
 
 /**

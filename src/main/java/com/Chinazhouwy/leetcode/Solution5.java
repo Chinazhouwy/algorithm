@@ -1,4 +1,4 @@
-package com.Chinazhouwy.leetcode;
+package com.chinazhouwy.leetcode;
 
 public class Solution5 {
 

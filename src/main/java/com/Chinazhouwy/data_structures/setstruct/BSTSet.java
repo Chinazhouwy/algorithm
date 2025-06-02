@@ -1,4 +1,4 @@
-package com.Chinazhouwy.data_structures.setstruct;
+package com.chinazhouwy.data_structures.setstruct;
 
 import com.Chinazhouwy.data_structures.tree.BST;
 

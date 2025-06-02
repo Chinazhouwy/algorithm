@@ -1,4 +1,4 @@
-package com.Chinazhouwy.data_structures.linkListArr;
+package com.chinazhouwy.data_structures.linkListArr;
 
 public class LinkedList<E> {
 	private class Node {

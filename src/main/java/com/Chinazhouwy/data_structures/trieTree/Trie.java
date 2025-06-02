@@ -1,4 +1,4 @@
-package com.Chinazhouwy.data_structures.trieTree;
+package com.chinazhouwy.data_structures.trieTree;
 
 import com.alibaba.fastjson.JSON;
 

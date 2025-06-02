@@ -1,4 +1,4 @@
-package com.Chinazhouwy;
+package com.chinazhouwy;
 
 import org.junit.Assert;
 import org.junit.Test;
