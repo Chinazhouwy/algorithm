@@ -88,7 +88,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;Application.Solution123.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BestTimeToBuyAndSellStockIII.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
@@ -96,15 +96,15 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.Chinazhouwy.sorting_algorithm" />
-      <recent name="com.Chinazhouwy.sorting_algorithm.utils" />
+      <recent name="com.chinazhouwy.algolab.sort" />
+      <recent name="com.chinazhouwy.algolab.utils" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
       <recent name="junit.framework.TestCase" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Solution123">
+  <component name="RunManager" selected="Application.BestTimeToBuyAndSellStockIII">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -112,13 +112,13 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="Solution120" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.Chinazhouwy.leetcode.Solution120" />
-      <module name="algorithm" />
+    <configuration name="TriangleMinimumPath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.chinazhouwy.algolab.leetcode.TriangleMinimumPath" />
+      <module name="408-algorithm-lab" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.Chinazhouwy.leetcode.*" />
+          <option name="PATTERN" value="com.chinazhouwy.algolab.leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,13 +126,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution123" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.Chinazhouwy.leetcode.Solution123" />
-      <module name="algorithm" />
+    <configuration name="BestTimeToBuyAndSellStockIII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.chinazhouwy.algolab.leetcode.BestTimeToBuyAndSellStockIII" />
+      <module name="408-algorithm-lab" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.Chinazhouwy.leetcode.*" />
+          <option name="PATTERN" value="com.chinazhouwy.algolab.leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -140,13 +140,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution300" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.Chinazhouwy.leetcode.Solution300" />
-      <module name="algorithm" />
+    <configuration name="LongestIncreasingSubsequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.chinazhouwy.algolab.leetcode.LongestIncreasingSubsequence" />
+      <module name="408-algorithm-lab" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.Chinazhouwy.leetcode.*" />
+          <option name="PATTERN" value="com.chinazhouwy.algolab.leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,13 +154,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.Chinazhouwy.leetcode.Solution5" />
-      <module name="algorithm" />
+    <configuration name="LongestPalindromicSubstring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.chinazhouwy.algolab.leetcode.LongestPalindromicSubstring" />
+      <module name="408-algorithm-lab" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.Chinazhouwy.leetcode.*" />
+          <option name="PATTERN" value="com.chinazhouwy.algolab.leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -168,13 +168,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution97" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.Chinazhouwy.leetcode.Solution97" />
-      <module name="algorithm" />
+    <configuration name="InterleavingString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.chinazhouwy.algolab.leetcode.InterleavingString" />
+      <module name="408-algorithm-lab" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.Chinazhouwy.leetcode.*" />
+          <option name="PATTERN" value="com.chinazhouwy.algolab.leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -214,19 +214,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Solution300" />
-      <item itemvalue="Application.Solution120" />
-      <item itemvalue="Application.Solution5" />
-      <item itemvalue="Application.Solution97" />
-      <item itemvalue="Application.Solution123" />
+      <item itemvalue="Application.LongestIncreasingSubsequence" />
+      <item itemvalue="Application.TriangleMinimumPath" />
+      <item itemvalue="Application.LongestPalindromicSubstring" />
+      <item itemvalue="Application.InterleavingString" />
+      <item itemvalue="Application.BestTimeToBuyAndSellStockIII" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Solution123" />
-        <item itemvalue="Application.Solution97" />
-        <item itemvalue="Application.Solution5" />
-        <item itemvalue="Application.Solution120" />
-        <item itemvalue="Application.Solution300" />
+        <item itemvalue="Application.BestTimeToBuyAndSellStockIII" />
+        <item itemvalue="Application.InterleavingString" />
+        <item itemvalue="Application.LongestPalindromicSubstring" />
+        <item itemvalue="Application.TriangleMinimumPath" />
+        <item itemvalue="Application.LongestIncreasingSubsequence" />
       </list>
     </recent_temporary>
   </component>
