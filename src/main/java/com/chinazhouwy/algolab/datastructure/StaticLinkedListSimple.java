@@ -14,7 +14,7 @@ package com.chinazhouwy.algolab.datastructure;
 top = 2  (栈顶指向idx=2)
  * StaticLinkedList
  */
-public class StaticLinkedList {
+public class StaticLinkedListSimple {
     static class Node {
         
         int value;
