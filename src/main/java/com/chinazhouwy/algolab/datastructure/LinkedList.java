@@ -51,9 +51,6 @@ public class LinkedList {
             tempNodePre = tempNode;
             tempNode = tempNode.next;
         }
-        /**
-         * 
-         */
         tempNodePre.next = tempNode.next;
         int ret = tempNode.value;
         tempNode = null;
@@ -73,6 +70,18 @@ public class LinkedList {
         tempNodePre.next = tempNodePre.next;
         size --;
         return removed.value;
+    }
+
+
+     int indexOf(int value) {
+        Node current = dummpNode.next;
+        for(int i = 0;i<size;i++){
+            if(current.value == value){
+                return i;
+            }
+            current = current.next;
+        }
+        return -1;
     }
 
 }
