@@ -11,7 +11,14 @@ public class SeqList {
             throw new IndexOutOfBoundsException();
         }
         ensureCapacity();
-        data[size] = value;
+        //data[size] = value;
+        // for(int i = index -1 ; i< size+1;i++){
+        //     data[i] = data[i+1];
+        // }
+        for(int i = size ; i > index;i--){
+            data[i] = data[i-1];
+        }
+        data[index] = value;
         size++;
     }
 
@@ -27,10 +34,13 @@ public class SeqList {
             throw new IndexOutOfBoundsException();
         }
         int removedValue = data[index];
-        for(int i = index; i < size - 1; i++) {
+        //
+        //for(int i = index; i < size; i++) {
+        for(int i = index; i < size-1; i++) {
             data[i] = data[i + 1];
         }
-        size--;
+        //size--;
+        data[size--]=0;
         return removedValue;
     }
 
