@@ -2,9 +2,14 @@ package com.chinazhouwy.algolab.datastructure;
 
 public class SeqList {
     
-    int[] data = new int[100];
+    int[] data;
     
     int size = 0;
+
+    public SeqList(int capacity) {
+        if (capacity < 0) throw new RuntimeException("");
+        data = new int[capacity];
+    }
 
     void add(int index,int value) {
         if (index < 0 || index > size) {
