@@ -1,6 +1,6 @@
 package com.chinazhouwy.algolab.datastructure;
 
-public class LinkedList {
+public class SinglyLinkedList {
     static final class Node {
         int value;
         Node next;
@@ -204,6 +204,62 @@ public class LinkedList {
         } 
 
         return slow;
+    }
+
+    // 返回链表的中间节点。
+    Node middleNode(Node head) {
+        Node fast = head;
+        Node slow = head;
+
+        while(fast != null && fast.next != null){
+            fast = fast.next.next;
+            slow = slow.next;
+        } 
+
+        return slow;
+    }
+
+    // 判断链表是否有环，并返回环的入口节点。
+    Node cycleEntry(Node head) {
+        
+        Node fast = head;
+        Node slow = head;
+        boolean hasCycle = false;
+
+        // while(fast != null ){
+ 
+        //     fast = fast.next.next;
+        //     slow = slow.next;
+
+        //     if(fast == slow){
+        //         if(hasCycle){
+        //             return slow;
+        //         }
+        //         hasCycle = true;
+        //         fast = head;
+        //     }
+
+        // } 
+
+
+        while(fast != null && fast.next != null ){
+ 
+            fast = fast.next.next;
+            slow = slow.next;
+
+            if(fast == slow){
+                fast = head;
+                while (fast != slow) {
+                    fast = fast.next;
+                    slow = slow.next;
+                }
+                return fast;
+            }
+
+        } 
+
+        return null;
+
     }
 
 }
