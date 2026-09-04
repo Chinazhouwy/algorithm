@@ -1,4 +1,4 @@
-package com.chinazhouwy.algolab.datastructure;
+package com.chinazhouwy.algolab.datastructure.linear;
 
 
 /**

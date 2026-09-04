@@ -1,6 +1,18 @@
 # Data Structures
 
-408 数据结构实现记录
+本目录对应项目 README 中的 `data-structure`，实际 Java 包名为
+`com.chinazhouwy.algolab.datastructure`。当前实现已经按机制拆到子包：
+
+```text
+datastructure/
+├── linear/   # 顺序表、链表、栈
+├── tree/     # 树（待补充）
+├── graph/    # 图（待补充）
+├── search/   # 查找、散列（待补充）
+└── sort/     # 排序
+```
+
+本文件重点记录 `linear` 中代码的 408 边界和指针语义。
 
 ## 栈 (Stack)
 

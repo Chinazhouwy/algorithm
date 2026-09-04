@@ -1,4 +1,4 @@
-package com.chinazhouwy.algolab.sort;
+package com.chinazhouwy.algolab.datastructure.sort;
 
 public abstract class SortAlgorithm {
 

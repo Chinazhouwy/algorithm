@@ -1,4 +1,4 @@
-package com.chinazhouwy.algolab.sort;
+package com.chinazhouwy.algolab.datastructure.sort;
 
 import com.chinazhouwy.algolab.utils.ArrayUtils;
 
