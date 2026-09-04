@@ -1,4 +1,4 @@
-package com.chinazhouwy.algolab;
+package com.chinazhouwy.algolab.leetcode;
 
 import java.io.IOException;
 import java.nio.charset.Charset;

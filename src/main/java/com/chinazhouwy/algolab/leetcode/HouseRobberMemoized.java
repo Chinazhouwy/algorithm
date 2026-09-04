@@ -1,4 +1,4 @@
-package com.chinazhouwy.algolab;
+package com.chinazhouwy.algolab.leetcode;
 
 import java.util.HashMap;
 import java.util.Map;

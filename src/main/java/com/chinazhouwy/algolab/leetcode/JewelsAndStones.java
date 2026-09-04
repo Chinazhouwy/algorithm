@@ -1,4 +1,4 @@
-package com.chinazhouwy.algolab;
+package com.chinazhouwy.algolab.leetcode;
 
 import org.junit.Assert;
 import org.junit.Test;
