@@ -15,14 +15,11 @@ public class SinglyLinkedList {
         if (index < 0 || index > size) {
             throw new IndexOutOfBoundsException();
         }
-        //dummyNode.next = newNode;
         Node tempNode = dummyNode;
-        for(int i =0 ; i< index-1;i++){
+        for(int i =0 ; i< index;i++){
             tempNode = tempNode.next; 
         }
         Node newNode = new Node(value);
-        // tempNode.next = newNode;
-        // newNode.next = tempNode.next;
         newNode.next = tempNode.next;
         tempNode.next = newNode;
         size ++;
@@ -191,10 +188,19 @@ public class SinglyLinkedList {
 
     //返回链表倒数第 k 个节点。
     Node kthFromEnd(Node head, int k) {
+        if (k <= 0) {
+            throw new IllegalArgumentException();
+        }
+
         Node fast = head;
         Node slow = head;
 
         for(int i=0;i<k;i++){
+            //当 k == 链表长度 时，fast 正常会移动到 null，这是合法情况，不应该抛异常。
+            // ！！！
+            if(fast == null){
+                throw new RuntimeException();
+            }
             fast = fast.next;
         }
 
@@ -224,13 +230,11 @@ public class SinglyLinkedList {
         
         Node fast = head;
         Node slow = head;
-        boolean hasCycle = false;
 
+        // boolean hasCycle = false;
         // while(fast != null ){
- 
         //     fast = fast.next.next;
         //     slow = slow.next;
-
         //     if(fast == slow){
         //         if(hasCycle){
         //             return slow;
@@ -238,9 +242,7 @@ public class SinglyLinkedList {
         //         hasCycle = true;
         //         fast = head;
         //     }
-
         // } 
-
 
         while(fast != null && fast.next != null ){
  

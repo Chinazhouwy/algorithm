@@ -1,7 +1,6 @@
 package com.chinazhouwy.algolab.datastructure;
 
 public class LinkedStack {
-
     static class Node {
         
         int value;
@@ -25,6 +24,9 @@ public class LinkedStack {
     }
 
     int pop() {
+        if(size <= 0){
+            throw new RuntimeException();
+        }
         int value = top.value;
         top = top.prev;
         size --;
@@ -32,6 +34,9 @@ public class LinkedStack {
     }
 
     int peek() {
+        if(size <= 0){
+            throw new RuntimeException();
+        }
         return top.value;
     }
 

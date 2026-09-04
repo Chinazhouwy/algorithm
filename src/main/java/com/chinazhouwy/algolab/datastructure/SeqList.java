@@ -7,7 +7,7 @@ public class SeqList {
     int size = 0;
 
     public SeqList(int capacity) {
-        if (capacity < 0) throw new RuntimeException("");
+        if (capacity <= 0) throw new RuntimeException("");
         data = new int[capacity];
     }
 

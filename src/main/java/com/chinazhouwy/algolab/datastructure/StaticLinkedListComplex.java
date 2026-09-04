@@ -66,7 +66,7 @@ public class StaticLinkedListComplex {
         }
     }
 
-    Node[] data = new Node[10];
+    Node[] data ;
 
     int top;
     
@@ -75,15 +75,14 @@ public class StaticLinkedListComplex {
     int free;
 
 
-    public StaticLinkedListComplex() {
+    public StaticLinkedListComplex(int capacity) {
+        data = new Node[capacity];
         for (int i = 0; i < data.length-1; i++) {
             data[i] = new Node(-1, -1,i+1);
         }
 
         data[data.length-1] = new Node(-1, -1, -1);
-
         free = 0;
-
         top = -1;
     }
 
@@ -91,7 +90,7 @@ public class StaticLinkedListComplex {
         
 
         int index = free;
-
+        ensureCapacity();
         Node newNode = data[free]; 
         newNode.value = value;
         newNode.prev = top;
@@ -125,7 +124,6 @@ public class StaticLinkedListComplex {
         free = index;
 
         size --;
-
         return ret;
 
     }
@@ -142,7 +140,13 @@ public class StaticLinkedListComplex {
        return size;
     }
 
-
+    void ensureCapacity() {
+        if (size >= data.length) {
+            Node[] newData = new Node[data.length * 2];
+            System.arraycopy(data, 0, newData, 0, size);
+            data = newData;
+        }
+    }
 
 
 }

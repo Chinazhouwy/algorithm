@@ -27,14 +27,19 @@ public class StaticLinkedListSimple {
         }
     }
 
-    Node[] data = new Node[10];
+    Node[] data ;
 
     int top = -1;
     
     int size ;
 
+    public StaticLinkedListSimple(int capacity){
+        data = new Node[capacity];
+    }
+
     void push(int value) {
         Node newNode = new Node(value, top);
+        ensureCapacity();
         data[size] = newNode;
         top = size;
         size++;
@@ -59,6 +64,14 @@ public class StaticLinkedListSimple {
 
     int size() {
        return size;
+    }
+
+    void ensureCapacity() {
+        if (size >= data.length) {
+            Node[] newData = new Node[data.length * 2];
+            System.arraycopy(data, 0, newData, 0, size);
+            data = newData;
+        }
     }
 
 }

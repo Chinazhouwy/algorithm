@@ -27,7 +27,7 @@ static class Node {
 
 ---
 
-### StaticLinkedList - 静态链表（简单版）
+### StaticLinkedListSimple - 静态链表（简单版）
 
 **设计思路**：用**固定大小数组** + **下标指针**模拟链表栈。
 
@@ -118,10 +118,11 @@ free = 0;
    free = nodeIdx
 ```
 
-**已知问题**：
-- ⚠️ `push` 方法有 bug：`top = free` 应该是 `top = nodeIdx`
-  - 当前代码让 top 指向**下一个空闲节点**，而不是**刚取出的节点**
-  - 导致数据链构建错误
+**当前状态**：
+- `top` 使用刚取出的节点下标，数据链的基本逻辑正确
+- `pop` 和 `peek` 已处理空栈情况
+- 仍需注意固定容量和扩容边界：`ensureCapacity` 扩容后必须把新数组重新赋给 `data`
+- 容量为 `0` 时无法正常 `push`
 
 ---
 
@@ -130,8 +131,31 @@ free = 0;
 | 文件 | 问题 | 现象 | 修复方案 |
 |------|------|------|--------|
 | LinkedStack.java | ✓ 正确 | - | - |
-| StaticLinkedList.java | ✓ 基本正确 | 需补完 isEmpty/peek/pop 方法 | 添加边界检查 |
-| StaticLinkedListComplex.java | `push()` 中 `top = free` | 数据链无法正确串联，pop 时会取到空闲链节点 | 改为 `int nodeIdx = free; ... top = nodeIdx;` |
+| SeqList.java | ✓ 基本正确 | 正常增删、查找和扩容可用 | - |
+| StaticLinkedListSimple.java | 扩容和容量边界 | 满容量或容量为 0 时 `push` 可能越界 | 正确回写扩容数组，并处理容量边界 |
+| StaticLinkedListComplex.java | 空闲链容量边界 | 空栈或空闲节点用完时可能访问 `data[-1]` | 添加空栈、满容量处理，并正确扩展空闲链 |
+| SinglyLinkedList.java | ✓ 基本正确 | 基础链表操作和指针算法可用 | - |
+| DoublyList.java | ✓ 基本正确 | 基础双向链表操作和指针维护可用 | - |
+
+## 链表练习
+
+### SinglyLinkedList
+
+包含单链表的基础操作，以及几个常见指针算法：
+
+- `reverse`: 反转链表
+- `mergeSorted`: 合并两个有序链表
+- `deduplicateSorted`: 有序链表去重
+- `removeAll`: 删除所有指定值的节点
+- `kthFromEnd`: 查找倒数第 k 个节点
+- `middleNode`: 查找中间节点
+- `cycleEntry`: 查找环的入口节点
+
+其中 `middleNode`、`kthFromEnd` 和 `cycleEntry` 使用快慢指针；`cycleEntry` 使用 Floyd 判环算法，不需要额外集合保存访问过的节点。
+
+### DoublyList
+
+使用 `prev` 和 `next` 两个方向的指针，练习插入、删除、读取和修改。插入或删除节点时，需要同时维护前驱节点的 `next` 和后继节点的 `prev`。
 
 ---
 
