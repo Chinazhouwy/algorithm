@@ -27,6 +27,59 @@
 
 常见坑：栈顶是 `top - 1`，不是 `top`；扫描结束不能忘记清空运算符栈；调用 `peek` 前要确认栈非空。
 
+### LinkedQueue
+
+`LinkedQueue` 使用带头结点的单链表实现队列：`head.next` 指向队头，`tail` 指向队尾，空队列时两者都落在头结点上，即 `head.next == null` 且 `tail == head`。
+
+入队操作：
+
+```java
+void enqueue(int value) {
+    tail.next = new Node(value);
+    tail = tail.next;
+    size++;
+}
+```
+
+出队操作：
+
+```java
+int dequeue() {
+    if (isEmpty()) throw new RuntimeException();
+    Node ret = head.next;
+    head.next = ret.next;
+    if (ret == tail) {
+        tail = head;
+    }
+    size--;
+    return ret.value;
+}
+```
+
+这里的关键不变量是：只有在删除的是尾结点时，才需要把 `tail` 归位到 `head`；否则尾指针保持不变。这样可以保证下次入队写 `tail.next = new Node(value)` 时，`tail` 仍然是有效的队尾结点。
+
+例如，队列状态为：
+
+```text
+head -> 10 -> 20 -> 30 -> null
+                      ^
+                      tail
+```
+
+如果删除 `30`，则应把 `tail` 改成 `head`，得到：
+
+```text
+head -> null
+      ^
+      tail
+```
+
+这样后续再执行 `enqueue(40)` 时就会从 `head.next` 接上新结点，而不是空指针崩掉。
+
+常见坑：出队后没有维护 `tail`；空队列时把 `tail` 设为 `null`；用 `size` 判断空队列时没有同步更新；`peek()` 和 `dequeue()` 之前都要先确认非空。
+
+复杂度：入队、出队、查看队头和判空均为 `O(1)`，空间复杂度为 `O(n)`。
+
 ### CircularList
 
 `CircularList` 只保存 `tail` 和 `size`：头节点始终是 `tail.next`。插入和删除后都必须保持这个环不变量；删除唯一节点时要把 `tail` 设为 `null`。
