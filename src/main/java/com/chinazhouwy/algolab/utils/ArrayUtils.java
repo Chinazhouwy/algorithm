@@ -35,7 +35,7 @@ public class ArrayUtils {
     }
 
     public static void printArray(int[] array){
-        System.out.print("sorted array: ");
+        // System.out.print("sorted array: ");
         Arrays.stream(array).forEach(e -> System.out.print(e+" "));
         System.out.println();
     }
