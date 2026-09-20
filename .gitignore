@@ -8,3 +8,5 @@
 .settings/org.eclipse.m2e.core.prefs
 .vscode/settings.json
 .project
+.DS_Store
+.idea/
